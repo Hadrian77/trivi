@@ -1,0 +1,41 @@
+In the Left/Right question format, 0 represents the left response, and 1 represents the right.
+
+Each key corresponds to a set of 8 questions, with responses stored as bits. The position of each bit within the answer byte indicates the identity of the question in the set, numbered 1 through 8. A 0 in the answer byte signifies the left response, and a 1 signifies the right.
+
+For unanswered questions, a second byte, the null-check byte, is used. Each answered question is marked as 1 in the null-check byte.
+
+An unanswered question is represented by a 0 in the answer byte.
+
+If all questions in a set are answered, the null-check byte can be omitted.
+If all questions are unanswered, both bytes can be omitted, and null is returned
+
+
+Fully Answered Set
+
+x:  01100100
+No null check byte, all 0s should be interpreted as left responses
+
+Partially Answered Set
+
+x: 00000011 00000010
+In this example questions 1 and 2 have been answered
+
+The first byte is the null check byte
+
+Questions 1 and 2 have been answered, indicated by 1s
+Questions 3 to 8 are unanswered, indicated by 0s
+
+
+
+The second byte is the answer byte
+
+Question 1 had a left response.
+Question 2 had a right response.
+
+The first byte represents which questions in the set have been answered
+The second byte represents how the questions were answered. In the second byte a 1 response always represents a question answered with the right (directional) response. A 0 represents either a left response, or an unanswered question. The null check byte informs whether or not the question has been answered.
+
+
+
+Unanswered Set
+x:null
