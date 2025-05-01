@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableDynamoDBRepositories
-        (basePackages = "com.baeldung.spring.data.dynamodb.repositories")
+        (basePackages = "com.trivi.repository")
 public class DynamoDBConfig {
 
     @Value("${amazon.dynamodb.endpoint}")
@@ -25,7 +25,7 @@ public class DynamoDBConfig {
     @Value("${amazon.aws.secretkey}")
     private String amazonAWSSecretKey;
 
-    @Value("${amazon.aws.signingRegion")
+    @Value("${amazon.aws.signingRegion}")
     private String amazonAWSSigningRegion;
 
     @Bean
