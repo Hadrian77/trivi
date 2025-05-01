@@ -1,6 +1,6 @@
 package com.trivi.controller;
 
-import com.trivi.model.Question;
+import com.trivi.model.questions.Question;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

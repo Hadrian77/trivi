@@ -1,4 +1,4 @@
-package com.trivi.model;
+package com.trivi.model.questions;
 
 public class GeneratedQuestion extends Question {
 

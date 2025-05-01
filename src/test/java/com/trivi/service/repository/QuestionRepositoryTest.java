@@ -2,7 +2,7 @@ package com.trivi.service.repository;
 
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 
-import com.trivi.model.Question;
+import com.trivi.model.questions.Question;
 import com.trivi.repository.QuestionRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;

@@ -1,5 +1,6 @@
 package com.trivi.model;
 import com.amazonaws.services.dynamodbv2.datamodeling.*;
+import com.trivi.model.questions.Question;
 
 import java.util.List;
 

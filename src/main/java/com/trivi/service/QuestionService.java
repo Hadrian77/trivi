@@ -1,10 +1,8 @@
 package com.trivi.service;
 
-import com.trivi.model.Question;
+import com.trivi.model.questions.Question;
 import com.trivi.repository.QuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.Optional;
 
